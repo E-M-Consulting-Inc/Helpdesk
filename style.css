@@ -90,8 +90,11 @@ border-radius: 5px;
   float: left;
   width: 30%;
   padding: 10px;
-  position:fixed;
 
+ }
+
+ footer {
+  position: fixed;
  }
 
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
