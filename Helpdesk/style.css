@@ -299,6 +299,7 @@ transition: height 0.3s ease-in;
 position: absolute;
 background-color: #fff;
 min-width: 160px;
+height: auto;
 box-shadow: #00000029 0px 8px 16px 0px;
 z-index: 1;
 border-radius: 10px;
