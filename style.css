@@ -200,7 +200,7 @@ p {
 .navigation {  
   text-align: left;
   padding-right: 80px;
-  height: 40px;
+  height: 68px;
   border-bottom: 2px solid #707070;
   background-color: #f8f9fa;
 }
@@ -253,7 +253,7 @@ p {
         
 .navigation > ul > li:hover ul, .navigation > ul > li > a:hover ul,
 .navigation ul ul li:hover > ul, .navigation ul ul li a:hover > ul{
-  height:160px; /* need a height to accommodate any tertiary menus */
+  height:130px; /* need a height to accommodate any tertiary menus */
 
 }
         
