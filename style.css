@@ -393,3 +393,15 @@ ul:hover ul {
 width: auto;
 padding-top: 10px;
 }
+
+
+/* This is css style for policy and terms of use titles */
+
+.title {
+ text-decoration: underline;
+ text-align: center;
+}
+
+.information {
+  font-weight: lighter;
+}
