@@ -401,3 +401,9 @@ padding-top: 10px;
  text-decoration: underline;
  text-align: center;
 }
+
+.information {
+padding: 30px 30px 30px 30px;
+text-align: justified;
+}
+
