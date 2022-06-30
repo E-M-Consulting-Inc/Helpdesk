@@ -154,6 +154,11 @@ function timestamp() { var response = document.getElementById("g-recaptcha-respo
         const submitButton = document.getElementById("submit-button");
         submitButton.removeAttribute("disabled");
       }
+
+      function callback() {
+    const sumbitButton = document.getElementById("submit-button");
+    submitButton.removeAttrubut("disabled");
+    }
     </script>
  
 
@@ -208,7 +213,7 @@ Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with
       
 <div style="width: 50%;" class="g-recaptcha" data-sitekey="6LeU1XIgAAAAAHHe_6uxR6_kP_oIt0UNjMFVztv_" data-callback="callback"></div>
       
- <div style="width: 50%;">    
+ <div style="width: 30%;">    
 <input id="submit-button" type="submit" disabled name="submit">
  </div>
       
@@ -217,13 +222,7 @@ Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with
 </form>
 
  <!-- END OF FORM CODE (CAN BE REMOVED UP FROM HERE) -->  
-  <script type="txt/javascript">
-  function callback() {
-  const sumbitButton = document.getElementById("submit-button");
-  submitButton.removeAttrubut("disabled");
-  }
-  
-  </script>
+
 </div>
 
 
@@ -242,7 +241,7 @@ Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with
    </div>
 
 
-<!-- This is One Contact Person
+ This is One Contact Person
    <div class="footcolumn" style="width:fit-content">
    <p><a href="mailto:sabrina@emconsultinginc.com"><h4>Sabrina Thong</h4><p>Administrative Assistant <br><br> 800.572.0011 x144 <br> sabrina@emconsultinginc.com</a></p>
  </div> -->
