@@ -339,9 +339,11 @@ ul:hover ul {
 }
 
 @media screen and (max-width: 600px) {
-  .navigation a:not(:first-child), ul .arrow {
-    display: none;
-
+  .navigation a:not(:first-child), ul .arrow {display: none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
   }
 
 
