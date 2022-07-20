@@ -253,7 +253,7 @@ p {
         
 .navigation > ul > li:hover ul, .navigation > ul > li > a:hover ul,
 .navigation ul ul li:hover > ul, .navigation ul ul li a:hover > ul{
-  height:130px; /* need a height to accommodate any tertiary menus */
+  height:150px; /* need a height to accommodate any tertiary menus */
 
 }
         
