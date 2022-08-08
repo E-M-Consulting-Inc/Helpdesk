@@ -35,7 +35,12 @@ body {
 
 }
 
-
+.mainticket {
+  width: 230px;
+  height: 195px;
+  margin: 50px;
+  background-color: url("Helpdesk/HelpDeskImages/mainit1.png");
+}
 
 /* Create two equal columns that floats next to each other */
 .column {
