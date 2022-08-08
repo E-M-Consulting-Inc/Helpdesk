@@ -6,6 +6,7 @@ body {
   }
 
 
+
 /* Start of Arrow Design and animation on Hover   */
 .arrow {
   position: relative;
@@ -52,6 +53,10 @@ display: table;
 clear: both;
 }
 
+.mainticket {
+  margin: 50px;
+  background-image: url("Helpdesk/HelpDeskImages/mainit1.png");
+}
 
 
 input[type=text], select, textarea {
