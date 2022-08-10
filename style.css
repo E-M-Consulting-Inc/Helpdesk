@@ -39,12 +39,9 @@ display: none;
 /* End of Arrow Design and animation on Hover   */
 
 
-
-
 .eandmlogo {
 color: #000;
 padding-left: 165px;
-
 }
 
 
@@ -57,7 +54,7 @@ padding: 10px;
 }
 
 .mainpage {
-padding: 60px;
+padding: 45px;
   }
 
 /* Clear floats after the columns */
