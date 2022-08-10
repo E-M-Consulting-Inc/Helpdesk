@@ -8,6 +8,7 @@ body {
 
 button {
   background-color: #f8f9fa;
+  margin-top: 100px;
 }
 
 button:hover {
@@ -36,26 +37,6 @@ display: none;
 /* End of Arrow Design and animation on Hover   */
 
 
-/* Start of Arrow Design and animation on Hover   */
-.goose {
-  position: relative;
-  display: inline-block;
-  }
-  
-  .goose .imghover {
-  display: none;
-  top: 0;
-  z-index: 99;
-  }
-  
-  .goose:hover .imghover {
-  display: inline;
-  }
-  
-  .goose:hover .imgnothover {
-  display: none;
-  }
-  /* End of Arrow Design and animation on Hover   */
 
 
 .eandmlogo {
