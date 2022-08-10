@@ -8,12 +8,14 @@ body {
 
 button {
   background-color: #f8f9fa;
-  margin-top: 100px;
+  margin: 100px;
 }
 
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+
 
 /* Start of Arrow Design and animation on Hover   */
 .arrow {
