@@ -30,9 +30,9 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
        
    <ul> 
     <li class="arrow"><a href="" >Contact
-        <img src="\Helpdesk\HelpDeskImages\Nav_downarrow_black.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
-        <img src="\Helpdesk\HelpDeskImages\Navigation_uparrow_red.png" alt="up arrow" class="imghover"> 
-      
+      <img src="\Helpdesk\HelpDeskImages\Nav_downarrow_black.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
+      <img src="\Helpdesk\HelpDeskImages\Navigation_uparrow_red.png" alt="up arrow" class="imghover"> 
+    </a>
         <ul>
             <li class="dropdown-content"></li> <!-- Start of the dropdown items under each tab-->
             <li><a href="mailto:helpdesk@emconsultinginc.com"><h4>Kody Jordan</h4><p>IT Support Specialist <br><br> 800.572.0011 x169 <br> helpdesk@emconsultinginc.com</p></a></li> <!-- To add another list item, copy and paste whole row-->
@@ -133,23 +133,87 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 
 <div class="column">
 
-  <button class="arrow" id="gooseswitch">
-      <img style="width: 150px; height: auto;" class="imgnothover" src="Helpdesk\HelpDeskImages\mainit1.png">
-      <img style="width: 150px; height: auto;" src="Helpdesk\HelpDeskImages\mainit2.png" class="imghover"> 
-  </button>
-  <button class="arrow" id="gooseswitch">
-      <img style="width: 150px; height: auto;" class="imgnothover" src="Helpdesk\HelpDeskImages\LPticket1.png">
-      <img style="width: 150px; height: auto;" src="Helpdesk\HelpDeskImages\LPticket2.png" class="imghover"> 
-  </button>
-  <button class="arrow" id="gooseswitch">
-      <img style="width: 150px; height: auto;" class="imgnothover" src="Helpdesk\HelpDeskImages\SFticket1.png">
-      <img style="width: 150px; height: auto;" src="Helpdesk\HelpDeskImages\SFticket2.png" class="imghover"> 
-  </button>
-  
-  <!-- Copy from here to the div after the footer to grab all information about footer-->
-  
-  </div>
-  
+<!-- START OF FORM CODE (CAN BE REMOVED FROM HERE-->      
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: Please add the following <META> element to your page <HEAD>. -->
+<!-- If necessary, please modify the charset parameter to specify the -->
+<!-- character set of your HTML page. -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+ <script>
+function timestamp() { var response = document.getElementById("g-recaptcha-response"); 
+                      if (response == null || response.value.trim() == "") 
+                      {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+</script>
+    <script type="text/javascript">
+      function callback() {
+        const submitButton = document.getElementById("submit-button");
+        submitButton.removeAttribute("disabled");
+      }
+    </script>
+ 
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: Please add the following <FORM> element to your page. -->
+<!-- ---------------------------------------------------------------------- -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" autocomplete="off">
+
+<input type=hidden name='captcha_settings' value='{"keyname":"Google","fallback":"true","orgId":"00D5w000003Ul2j","ts":""}'>
+<input type=hidden name="orgid" value="00D5w000003Ul2j">
+<input type=hidden name="retURL" value="https://helpdesk.emconsultinginc.com/confirmation.html">
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: These fields are optional debugging elements. Please uncomment -->
+<!-- these lines if you wish to test in debug mode. -->
+<!-- <input type="hidden" name="debug" value=1> -->
+<!-- <input type="hidden" name="debugEmail" value="kody@eandmsales.com"> -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+<label for="email">Email:</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br><br>
+
+<label for="subject">Subject:</label><input id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Support Ticket"/><br><br>
+
+Department:<select id="00N5w00000S1maj" name="00N5w00000S1maj" title="Department"><option value="">--None--</option><option value="Association Team">Association Team</option>
+<option value="Graphics">Graphics</option>
+<option value="Sales">Sales</option>
+<option value="Management">Management</option>
+<option value="Accounting">Accounting</option> 
+ </select><br><br>
+
+
+
+Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with"><option value="">--None--</option><option value="Computer">Computer</option>
+<option value="Peripherals (Mouse, Keyboard, Monitor, etc.)">Peripherals (Mouse, Keyboard, Monitor, etc.)</option>
+<option value="Software">Software</option>
+<option value="Network (Internet Access, Server Access, etc.)">Network (Internet Access, Server Access, etc.)</option>
+<option value="Phone">Phone</option>
+<option value="Other">Other</option>
+</select><br>
+
+
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+
+<input id="submit-button" type="submit" name="submit">
+<div class="g-recaptcha" data-sitekey="6LeU1XIgAAAAAHHe_6uxR6_kP_oIt0UNjMFVztv_" data-callback="callback"></div>
+
+      
+
+</form>
+
+ <!-- END OF FORM CODE (CAN BE REMOVED UP FROM HERE) -->  
+
+</div>
 
 
 <!-- Copy from here to the div after the footer to grab all information about footer-->
@@ -205,7 +269,5 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 <!--This is the end of the footer section-->
 
 </body>
-
-
 
 </html>
