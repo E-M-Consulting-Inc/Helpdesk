@@ -9,6 +9,7 @@ body {
 button {
   background-color: #f8f9fa;
   margin:20px;
+  margin-bottom:50%;
 }
 
 button:hover {
@@ -57,7 +58,7 @@ padding: 10px;
   width: 100%;
   padding: 5px;
   margin-left: 20%;
-  margin-top:8%;
+  margin-top:5%;
   }
 
 .row::after {
