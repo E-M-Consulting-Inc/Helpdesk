@@ -8,7 +8,7 @@ body {
 
 button {
   background-color: #f8f9fa;
-  margin: 40px;
+  align: center;
 }
 
 button:hover {
@@ -55,7 +55,6 @@ padding: 10px;
 
 .mainpage {
 width: 100%;
-float: center;
 margin-left: 100px;
 height: 300px;
   }
