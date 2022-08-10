@@ -54,7 +54,9 @@ padding: 10px;
 }
 
 .mainpage {
-padding: 45px;
+width: 80%;
+padding: 10px;
+align-content: center;
   }
 
 /* Clear floats after the columns */
