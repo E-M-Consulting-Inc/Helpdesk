@@ -376,7 +376,7 @@ display: block;
 .navigation a:not(:first-child), ul .arrow {
   display: none;
 
-} 
+
 }
 
 .navigation a.icon {
@@ -385,7 +385,7 @@ display: block;
   border: 3px solid #707070;
   border-radius: 10px;
 }
-
+}
 
 @media screen and (max-width: 600px) {
 .navigation.responsive {position: relative;}
@@ -393,7 +393,7 @@ display: block;
   position: absolute;
   right: 0;
   top: 0;
-}
+
 
 }
 .navigation.responsive a {
@@ -402,7 +402,7 @@ display: block;
   text-align: left;
 }
 
-
+}
 
 .policy {
 text-align: left;
