@@ -36,6 +36,28 @@ display: none;
 /* End of Arrow Design and animation on Hover   */
 
 
+/* Start of Arrow Design and animation on Hover   */
+.goose {
+  position: relative;
+  display: inline-block;
+  }
+  
+  .goose .imghover {
+  display: none;
+  top: 0;
+  z-index: 99;
+  }
+  
+  .goose:hover .imghover {
+  display: inline;
+  }
+  
+  .goose:hover .imgnothover {
+  display: none;
+  }
+  /* End of Arrow Design and animation on Hover   */
+
+
 .eandmlogo {
 color: #000;
 padding-left: 165px;
