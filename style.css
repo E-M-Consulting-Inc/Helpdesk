@@ -5,9 +5,14 @@ body {
 
 }
 
+.box {
+  background-color: transparent;
+  height:max-content;
+}
 
 button {
   background-color: #f8f9fa;
+  margin-right: 30px;
   border-radius: 10px;
 }
 
@@ -54,18 +59,17 @@ padding: 10px;
 }
 
 .mainpage {
-  width: 80%;
-  padding: 5px;
-  margin-top:5%;
-  margin-left: 15%;
-  margin-bottom: 20%;
- 
+position: fixed;
+width: 90%;
+float: center;
+margin-left: 100px;
   }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
 }
 
 
