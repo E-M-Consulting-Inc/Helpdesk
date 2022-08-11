@@ -2,7 +2,6 @@ body {
   font-family: muli;
   font-weight: 900 0.875rem;
   font-style: normal;
-
 }
 
 
@@ -66,6 +65,7 @@ width: 75%;
 float: center;
 margin-left: 300px;
 margin-top: 5%;
+text-align:center;
 
   }
 
