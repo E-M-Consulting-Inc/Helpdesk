@@ -10,6 +10,8 @@ button {
   background-color: #f8f9fa;
   border-radius: 10px;
   align-items: center;
+  margin-right: 80px;
+  margin-left: 50px;
 }
 
 button:hover {
@@ -45,10 +47,9 @@ color: #000;
 padding-left: 165px;
 }
 
-.box {
+/* .box {
   background-color: transparent;
-  height: 300px;
-}
+} */
 
 /* Create two equal columns that floats next to each other */
 .column {
