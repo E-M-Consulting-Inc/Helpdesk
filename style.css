@@ -10,8 +10,7 @@ button {
   background-color: #f8f9fa;
   border-radius: 10px;
   align-items: center;
-  margin-right: 80px;
-  margin-left: 50px;
+
 }
 
 button:hover {
@@ -61,7 +60,7 @@ padding: 10px;
 .mainpage {
 width: 90%;
 float: center;
-margin-left: 100px;
+margin-left: 300px;
 margin-top: 5%;
 
   }
