@@ -17,7 +17,11 @@ button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-
+h1 {
+  color: #FA5540;
+  text-align: center;
+  margin-top: 10px;
+}
 
 /* Start of Arrow Design and animation on Hover   */
 .arrow {
@@ -58,7 +62,7 @@ padding: 10px;
 }
 
 .mainpage {
-width: 90%;
+width: 75%;
 float: center;
 margin-left: 300px;
 margin-top: 5%;
