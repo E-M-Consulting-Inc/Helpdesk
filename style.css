@@ -5,10 +5,6 @@ body {
 
 }
 
-.box {
-  background-color: transparent;
-  height:max-content;
-}
 
 button {
   background-color: #f8f9fa;
@@ -49,7 +45,10 @@ color: #000;
 padding-left: 165px;
 }
 
-
+.box {
+  background-color: transparent;
+  height: 200px;
+}
 
 /* Create two equal columns that floats next to each other */
 .column {
@@ -59,7 +58,6 @@ padding: 10px;
 }
 
 .mainpage {
-position: fixed;
 width: 90%;
 float: center;
 margin-left: 100px;
