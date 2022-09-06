@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-
+<head> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="height=device-height, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.typekit.net/igq1smf.css">
 <link rel="stylesheet" href="style.css">
-<!-- CSS only -->
 
 <title>IT Help Desk</title>
 </head>
 <!--
-
 IMPORTANT: Things to keep in mind if you ever want to restyle anything: 
 1. Keep the ID and CLASS stuff in - if deleted or replaced make sure to also delete or replace in the style.css page - that way the CSS will transfer over 
       1a. There is also javascript code in here, which calls the class and id names I set, so if replaced, please watch out for that 
 
+2. If you plan on moving the images to a different folder or rename the images folder, remember to also fix the file paths to each image
 -->
 
 <body>
@@ -24,11 +22,13 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 
 <!--  Start of the Navigation Bar Creation  -->
 <!--////////////////////////////////////////////////////////////////////////////////////-->
-<div class="navigation" id="responsivenav">
+      
+ <div class="navigation" id="responsivenav">
 
 
-  <!-- Start of Contact Tab in Nav Bar -->     
-  <ul> 
+  <!-- Start of Contact Tab in Nav Bar -->   
+       
+   <ul> 
     <li class="arrow"><a href="" >Contact
       <img src="\Helpdesk\HelpDeskImages\Nav_downarrow_black.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
       <img src="\Helpdesk\HelpDeskImages\Navigation_uparrow_red.png" alt="up arrow" class="imghover"> 
@@ -37,9 +37,10 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
             <li class="dropdown-content"></li> <!-- Start of the dropdown items under each tab-->
             <li><a href="mailto:helpdesk@emconsultinginc.com"><h4>Kody Jordan</h4><p>IT Support Specialist <br><br> 800.572.0011 x169 <br> helpdesk@emconsultinginc.com</p></a></li> <!-- To add another list item, copy and paste whole row-->
 
-        </ul>
+         </ul>
       </li>
-  </ul>
+  </ul> 
+       
   <!-- End of Contact Tab in Nav Bar -->     
 
 <!--////////////////////////////////////////////////////////////////////////////////////-->
@@ -52,17 +53,20 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
       </a>
           <ul> 
               <li class="dropdown-content"></li>
-<!--               <li><a href="hrticket.html">Human Resources</a></li> -->
-              <li><a href="https://www.lastpass.com/features/password-generator">Password Generator</a></li> <!-- To change or update links replace the href path-->
-<!--               <li><a href="#">Link 3</a></li> -->
+<!--               <li><a href="hrlogin.html">Human Resources</a></li> -->
+              <li><a href="https://www.lastpass.com/features/password-generator"target="_blank">Password Generator</a></li> <!-- To change or update links replace the href path-->
+              <li><a href="https://github.com/E-M-Consulting-Inc/CDN"target="_blank">WatchGuardVPN Download</a></li>
+<!--                 <li><a href="#">"Link" target="_blank"</a></li> -->
           </ul>
+            
       </li>
     </ul>
 <!-- End of Resources Tab in Nav Bar -->    
 
 <!--////////////////////////////////////////////////////////////////////////////////////-->
 
-<!-- Start of Knowledge Base Tab in Nav Bar -->    
+<!-- Start of Knowledge Base Tab in Nav Bar -->   
+
 <!--     <ul>
       <li class="arrow"><a href="" >Knowledge Base
         <img src="\Helpdesk\HelpDeskImages\Nav_downarrow_black.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
@@ -73,24 +77,32 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
               <li><a href="">Link 1</a></li>
               <li><a href="#">Link 2</a></li>
               <li><a href="#">Link 3</a></li>
-          </ul> -->
-<!--       </li> -->
+          </ul>
+      </li> -->
+
 <!-- End of Knowledge Base Tab in Nav Bar -->  
 
 <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+      <!--Code for logo and company name div in top left corner of website -->
+<div class="logo">
+          <h3><a  class="eandmlogo" href="https://helpdesk.emconsultinginc.com/">  <img class="" src="\Helpdesk\HelpDeskImages\eandmlogo.png" class="responsive" alt="E&M Logo" style="vertical-align: middle; width: 40px; height: 40px; margin-right: 15px; top: -5px; position: inherit; margin-top: 5px;" href="https://helpdesk.emconsultinginc.com/"> E&M Consulting, Inc.</a> </h3>
+      </div>
             
           </ul>  
 
+      <!-- This is used to link javascript code with the nav bar -->
+<!--       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>   
 
-          <h3><a  class="eandmlogo" href="https://reserveyourad.com/Helpdesk/">  <img class="" src="\Helpdesk\HelpDeskImages\eandmlogo.png" class="responsive" alt="E&M Logo" style="vertical-align: middle; width: 40px; height: 40px; margin-right: 15px; top: -5px; position: inherit;" href="https://reserveyourad.com/Helpdesk/"> E&M Consulting, Inc.</a> </h3>
-
-            
+             -->
         </ul>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>   
+      
 
 
 
         </div>
+
+
 
 
 
@@ -105,44 +117,181 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
                 x.className = "navigation"; // This is the end of the if statement that allows the navbar to go back to its original state//
               }
             }
+
             </script>
 <!--This is end of Javascript code to make the Navbar Responsive-->
 
 
 
+<div class="row">
+<div class="column">
 
-
-<footer style="background-color: #292929; text-align: left; padding: 25px; color:#ffffff; width: 100%; height: 100%; display: table; clear: both; ">
-
-     <!-- Keep this section - if more people, add to LP, will show up in footer -->
-  <div class="footcolumn">
-     <!-- <h1>Contact:</h1> <br> -->
-<!-- 
-     <div class="footcolumn" style="width:fit-content">
-      <p><a href="mailto:helpdesk@emconsultinginc.com"><h4>Kody Jordan</h4><p>IT Support Specialist <br><br> 800.572.0011 x169 <br> helpdesk@emconsultinginc.com</a></p>
-    </div>
-
-    <div class="footcolumn" style="width:fit-content">
-    <p><a href="mailto:sabrina@emconsultinginc.com"><h4>Sabrina Thong</h4><p>Administrative Assistant <br><br> 800.572.0011 x144 <br> sabrina@emconsultinginc.com</a></p>
-  </div> -->
+<img src="/Helpdesk/HelpDeskImages/techgusty.png" class="responsive" alt="Tech goose image">
 
 </div>
 
-  <div>
+<div class="column">
+
+ 
+
+ <h1>Terms of Use</h1> 
+ <p>
+  E&M Management, LLC (“E&M,” “us,” “we” or “our”) provides a platform to enable its agencies and event organizers to offer, promote and manage various services to its end-users (“User(s),” “you,” “your”) through various event-related mobile and/or web applications (“App” or “Apps”) which are available online and/or on your mobile device (the “Service”). This Terms of Use Agreement (“Terms”) governs the terms, conditions, access, use and services provided by E&M to you. Your download of the App and your use of the Service constitutes your agreement to these Terms. <br> <br>
+
+  1. Acceptance of the Terms<br> <br>
+  
+  The terms and conditions outlined in these Terms govern all matters related to your installation and use of the App and Service and supersede all other agreements, representations, warranties and understandings with respect to the App and Service. By entering into these Terms electronically, you represent and warrant that:<br> <br>
+  
+        a) You are at least 18 years old and agree that these Terms have the same force and effect as an agreement made in writing;<br> <br>
+  
+        b) You are not a “bot” or other similar automated software application;<br> <br>
+  
+        c) You expressly agree to be contacted via email, SMS, text-messaging and push notifications/badges by us, and third-parties, if relevant, regarding our App and Service;<br> <br>
+  
+        d) You grant us permission to display your profile and such other account information supplied by you for public display as you designate;<br> <br>
+  
+        e) You grant us permission to access your account and content of any kind transmitted to or through the App and Service using your account, to process and submit such content to Users; and<br> <br>
+  
+        f) You expressly agree that E&M will be the sole publisher of the App and Service with any mobile platform provider, including iOS and Android devices.<br> <br>
+  
+  2. Updates and Modification of the Terms <br> <br>
+  
+  You agree that E&M is not obligated to create or provide any support, corrections, updates, upgrades, bug fixes, and/or enhancements (“Update” or “Updates”) of the App and Service. However, in the event E&M decides to offer an Update, you agree that E&M may amend these Terms in connection with such Update without specific notice to you and that your installation and use of the Update is conditioned upon your acceptance of any revised Terms. By installing an Update, you are representing that you have reviewed the then-current version of the Terms and agree to be bound by such version. You may not install any Update unless you agree to the then-current version of the Terms and are at least 18 years old. All Updates will be governed by the version of these Terms published by E&M as of the date you install such Update.<br> <br>
+  
+   We reserve the right, at any time, to modify, suspend, or discontinue the App and Service, or any part thereof, with or without notice, subject to the terms of any agreement you have with E&M. You agree that E&M will not be liable to you or to any third party for any modification, suspension, or discontinuance of the App and Service, or any part thereof, subject to the terms of any agreement you have with E&M.<br> <br>
+  
+  3. License and Ownership <br> <br>
+  
+  E&M grants you a personal, revocable, limited, non-transferable license to use the App and Service on either (a) an iOS Product that you own or control as permitted by the Usage Rules set forth in the App Store Terms and Conditions, or (b) any Android-enabled mobile device subject to the Google Play Terms of Service (collectively, the “Usage Rules”). The license granted to you does not convey any rights except for the limited right of access to, and the right to use, the App and Service. E&M reserves the right to revoke your license at any time.<br> <br>
+  
+   As between you and E&M, the App and Service are and shall remain the sole property of E&M and are subject to protection under U.S. and foreign copyright laws. The App and Service provided to you is licensed to you and not sold. E&M (and its licensors, where applicable) owns all right, title and interest, including all related intellectual property rights, in and to the App and Service. These Terms do not convey to you any rights of ownership in or related to the App and Service. The E&M name, logo, and the product names associated with the App and Service belong to E&M (or its licensors, where applicable), and no right or license is granted to use them by implication, estoppel or otherwise. E&M (and its licensors, where applicable) reserve all rights not granted in these Terms.<br> <br>
+  
+  4. Your Use of the App and Service<br> <br>
+  
+  You are solely responsible for your use of the App and Service. You shall not use the App and Service for any purpose that is prohibited by these Terms or law. You shall not use, nor permit any third party using your mobile device to, use the App and Service to: (a) engage in any communications that are unlawful, harassing, defamatory, offensive, libelous, abusive, threatening, harmful, vulgar, obscene, or otherwise objectionable; (b) encourage or engage in any criminal conduct, conduct that could give rise to civil liability, or otherwise violate any applicable local, state, national or international law or regulation; (c) gain or attempt to gain unauthorized access to other computer systems; or (d) interfere with any other person’s use and enjoyment of the App and Service.<br> <br>
+  
+  The rights granted to you in these Terms are subject to the following restrictions: (a) you shall not license, sell, rent, lease, transfer, assign, distribute, host, or otherwise commercially exploit the App and Service; (b) you shall not modify, translate, adapt, merge, make derivative works of, disassemble, decompile, reverse compile or reverse engineer any part of the App and Service, except to the extent the foregoing restrictions are expressly prohibited by applicable law; (c) you shall not access the App and Service in order to build a similar or competitive service or application, or publish any performance, or any benchmark test or analysis relating to the App and Service or E&M services, without the prior written consent of E&M; (d) except as expressly stated herein, no part of the App and Service may be copied, reproduced, distributed, republished, downloaded, displayed, posted or transmitted in any form or by any means; and (e) you shall not remove or destroy any copyright notices or other proprietary markings contained on or in the App and Service. Any future release, update, or other addition to functionality of the App and Service shall be subject to these Terms, unless otherwise provided in terms associated with such release, update or other addition.<br> <br>
+  
+  If you are using the App and Service outside of an area with Wi-Fi, you should remember that the terms and conditions of your agreement with your mobile network provider apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the App and using the Service, along with any other third party charges. Your use of the App and Service signifies your acceptance of any such charges, including roaming data charges if you use the App and Service outside of your home territory (i.e. region or country) without turning off data roaming. Please be aware that even if you are not the bill payer for the device on which you’re using the App and Service, we assume that you have received permission from the bill payer to do so.<br> <br>
+  
+  5. Links<br> <br>
+  
+  E&M has not reviewed all of the sites linked to its App and Service and is not responsible for the contents, privacy policies or practices of any such linked site. The inclusion of any link does not imply endorsement by E&M of the site. Use of any such linked website is at your own risk and will be subject to that linked site’s terms of use.<br> <br>
+  
+  At times, the App and Service may implement the Google and Apple Maps web mapping service. You acknowledge your use of Google Maps is subject to Google's terms of use, located at http://www.google.com/intl/en_us/help/terms_maps.html. You acknowledge your use of Apple maps is subject to Apple’s terms of use, located at http://www.apple.com/legal/internet-services/maps/termsen.html.<br> <br>
+  
+  6. Revisions and Errors<br> <br>
+  
+  The materials appearing on E&M’s App and Service could include technical, typographical or photographic errors. E&M does not warrant that any of the content or materials on its App and Service are accurate, complete, or current. E&M may make changes to the materials contained on its App at any time, without notice. E&M does not, however, make a commitment to update the materials.
+  
+  7. User Content<br> <br>
+  
+  We allow Users to post and share in their discretion various content on the App and Service. By submitting content, including comments, photos, video, data or other materials directly through the App and Service, you hereby grant to us an irrevocable, unlimited, transferrable and nonexclusive right and license to use access, store, copy, modify, re-post, rearrange, display, distribute, reproduce, perform and create derivative works from the content. Subject to the foregoing license, you retain all of your rights in any of the content you post or share on the App and Service.
+  
+  We cannot and do not monitor all of the content posted or provided by you and other Users. You expressly agree that we: (a) will not be liable for any content you or other Users post or share, and (b) we reserve the right to review, reject, delete, remove, modify, or edit any content at any time, for any reason, without liability and without notice to you. We reserve the right, but are not obligated to, remove any content that we deem inappropriate, offensive, unlawful or in violation of these Terms. 
+  
+  8. Term and Termination; Account Deletion<br> <br>
+  
+  TERM: Subject to this Section, these Terms will remain in full force and effect while you use the App and Service. <br> <br>
+  
+  TERMINATION BY YOU: You may terminate your account with E&M at any time, for any reason.<br> <br>
+  
+  TERMINATION BY E&M: E&M may, in its sole discretion, terminate your account at any time, with or without cause. E&M may also, in its sole discretion, suspend your rights to use the App and Service and/or suspend, disable, or delete your account (or any part thereof) at any time for any reason.<br> <br>
+  
+  EFFECT OF TERMINATION/ACCOUNT DELETION: Upon termination, your right to use the App and Service will automatically and immediately terminate. All provisions of these Terms which by their nature should survive, shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, and limitations of liability. <br> <br>
+  
+  9. Indemnification<br> <br>
+  
+  You agree to indemnify, defend, and hold harmless E&M and its parents, subsidiaries, affiliates, directors, officers, employees, and agents, partners, and licensors from and against any losses, costs, liabilities, claims, demands, and expenses, including reasonable attorneys’ fees and other legal costs, relating to or arising out of: (i) your use or misuse of the App or the Service, including any posts or content you share; (ii) any negligent acts, omissions or willful misconduct by you; (iii) your violation of any rights of another party; and (iv) your violation of these Terms or any applicable laws, rules, or regulations. This indemnification provision also applies to you in the event a third party accesses the App or Service via your account. The obligations set forth in this Section shall survive the termination of these Terms or your use of the App and Service. <br> <br>
+
+   10. Disclaimers of Warranty<br> <br>
+  
+  YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOUR USE OF THE APP AND SERVICE IS AT YOUR SOLE RISK AND THAT, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APP, THE SERVICE AND ANY CONTENT OR INFORMATION PROVIDED THEREIN ARE PROVIDED “AS IS” AND “AS AVAILABLE,” WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND. YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOU HAVE NOT ENTERED INTO THESE TERMS IN RELIANCE UPON ANY WARRANTY OR REPRESENTATION.<br> <br>
+  
+  E&M HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE APP, THE SERVICE AND ANY CONTENT OR INFORMATION PROVIDED THEREIN EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS. E&M DOES NOT WARRANT THAT THE APP, THE SERVICE OR ANY CONTENT PROVIDED BY THEREIN, INCLUDING ANY PARTNER CONTENT, WILL MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF THE APP AND SERVICE WILL BE UNINTERRUPTED, SECURE, ERROR-FREE OR VIRUS-FREE, OR THAT DEFECTS WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY E&M OR ITS AUTHORIZED REPRESENTATIVES SHALL CREATE A WARRANTY. <br> <br>
+  
+  11. Limitation on Liability<br> <br>
+  
+  NEITHER E&M, ITS AFFILIATES, NOR ANY OF THEIR RESPECTIVE OFFICERS, DIRECTORS, AGENTS OR OTHER REPRESENTATIVES WILL BE LIABLE FOR ANY DAMAGES, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, OR PUNITIVE, INCLUDING, WITHOUT LIMITATION, LOSS OF USE, DATA, INCOME, PROFIT OR GOODWILL, LOSS OF OR DAMAGE TO PROPERTY AND CLAIMS OF THIRD PARTIES ARISING OUT OF YOUR USE OF THE APP OR SERVICE OR ARISING OUT OF ANY ACTION TAKEN IN RESPONSE TO OR AS A RESULT OF ANY CONTENT OR OTHER INFORMATION AVAILABLE THEREIN, HOWEVER CAUSED, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), PROPRIETARY RIGHTS INFRINGEMENT, PRODUCT LIABILITY OR OTHERWISE. THE FOREGOING SHALL APPLY EVEN IF E&M WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. <br> <br>
+  
+  IF YOU BECOME DISSATISFIED IN ANY WAY WITH THE APP, THE SERVICE OR THESE TERMS, YOUR SOLE AND EXCLUSIVE REMEDY IS TO STOP YOUR USE OF THE APP AND SERVICE. YOU HEREBY WAIVE ANY AND ALL CLAIMS AGAINST E&M AND ITS AFFILIATES, AGENTS, REPRESENTATIVES AND LICENSORS ARISING OUT OF YOUR USE OF THE APP AND SERVICE. BECAUSE SOME STATES DO NOT ALLOW THE DISCLAIMER OF IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN TYPES OF DAMAGES, THESE PROVISIONS MAY NOT APPLY TO YOU. IF ANY PORTION OF THIS LIMITATION ON LIABILITY IS FOUND TO BE INVALID OR UNENFORCEABLE FOR ANY REASON, AND/OR FOR ANY AND ALL OTHER LIABILITIES, HOWEVER, ARISING, THE AGGREGATE LIABILITY OF E&M AND ITS AFFILIATES SHALL NOT EXCEED THE TOTAL AMOUNT PAID BY YOU FOR THE USE OF THE APP AND SERVICE. THE LIMITATION OF LIABILITY HEREIN IS A FUNDAMENTAL ELEMENT OF THE BASIS OF THE BARGAIN AND REFLECTS A FAIR ALLOCATION OF RISK. THE APP AND SERVICE WOULD NOT BE PROVIDED WITHOUT SUCH LIMITATIONS AND YOU AGREE THAT THE LIMITATIONS AND EXCLUSIONS OF LIABILITY, DISCLAIMERS AND EXCLUSIVE REMEDIES SPECIFIED HEREIN WILL SURVIVE EVEN IF FOUND TO HAVE FAILED IN THEIR ESSENTIAL PURPOSE.<br> <br>
+  
+  12. General Arbitration; Applicable Law<br> <br>
+  
+  PLEASE READ THIS CAREFULLY. IT AFFECTS YOUR RIGHTS.<br>
+  Except for a claim by E&M of infringement or misappropriation of E&M’s patent, copyright, trademark, or trade secret, any and all disputes between you and E&M arising under or related in any way to these Terms must be resolved through binding arbitration as described in this section. This agreement to arbitrate is intended to be interpreted broadly. It includes, but is not limited to, all claims and disputes relating to your use of the App and Service.<br> <br>
+  
+   BY AGREEING TO THESE TERMS, YOU AND E&M ARE EACH WAIVING THE RIGHT TO TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION. YOU AND E&M AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN THEIR INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. ANY ARBITRATION WILL TAKE PLACE ON AN INDIVIDUAL BASIS; CLASS ARBITRATIONS AND CLASS ACTIONS ARE NOT PERMITTED.<br> <br>
+  
+  Any dispute, controversy or claim arising out of or related to these Terms shall be referred to, governed by, and finally resolved through arbitration with the International Center for Dispute Resolution (“ICDR”) of the American Arbitration Association in accordance with its International Arbitration Rules. The place of the arbitration proceedings shall be held in Minneapolis, Minnesota and Minnesota law shall apply. The dispute, controversy or claims shall be decided by one (1) arbitrator who is licensed to practice law and has a minimum of ten (10) years’ of arbitration experience. The language of arbitration shall be English.<br> <br>
+  
+   For any claim where the total amount of the award sought is $10,000 or less, the ICDR, you and E&M must abide by the following rules: (a) the arbitration shall be conducted solely based on written submissions; and (b) the arbitration shall not involve any personal appearance by the parties or witnesses unless otherwise mutually agreed by the parties. If the claim exceeds $10,000, the right to a hearing will be determined by the ICDR rules, and the hearing (if any) must take place in Minnesota.<br> <br>
+  
+  The arbitrator’s ruling is binding and may be entered as a judgment in any court of competent jurisdiction. In the event this agreement to arbitrate is held unenforceable by a court, then the disputes that would otherwise have been arbitrated shall be exclusively brought in the state or federal courts located in Minnesota. Claims of infringement or misappropriation of E&M’s patent, copyright, trademark, or trade secret shall be exclusively brought in the state and federal courts located in Minneapolis, Minnesota. <br> <br>
+  
+  13. Entire Agreement; Severability; Waiver<br> <br>
+  
+  These Terms constitute the entire agreement between you and E&M and supersede all prior and contemporaneous discussions between the parties with respect to the subject matter hereof. If any term of these Terms is found invalid or unenforceable by any court of competent jurisdiction, the other provisions of these Terms will remain enforceable, and the invalid or unenforceable provision will be deemed modified so that it is valid and enforceable to the maximum extent permitted by law. No failure or delay by E&M in exercising any right hereunder will be deemed a waiver of any other provision of these Terms on any other occasion.<br> <br>
+  
+  14. Successors; Assignment; No Third Party Beneficiaries<br> <br>
+  
+  This Agreement is binding upon and shall inure to the benefit of both parties and their respective successors, heirs, executors, administrators, personal representatives, and permitted assigns. You may not assign or transfer these Terms or your rights and obligations hereunder without E&M’s prior written consent, and any attempted assignment or transfer in violation of the foregoing will be null and void. No third party shall have any rights hereunder.<br> <br>
+  
+  15. Governing Law<br> <br>
+  
+  Any claim relating to E&M’s App and Service shall be governed in all respects in accordance with the substantive and procedural laws of the State of Minnesota, without regard to any state’s choice of law rules. <br> <br>
+  
+  16. Privacy Policy <br> <br>
+  
+  Our Privacy Policy is expressly incorporated into these Terms and by using or accessing our App and Service, you agree to be bound by the terms and conditions of our Privacy Policy. Our Privacy Policy describes our practices related to the use, storage and disclosure of information we collect from or about you in the course of providing services, information, and content through our App and Service. You understand that by using our Service, you give consent to the collection, use and disclosure of your personally identifiable information and other information as described in more detail in our Privacy Policy. Our Privacy Policy also describes our practices related to push notifications and badges you receive through the App and Service. You understand that by using our App and Service, you give consent to receive promotional messages and materials and advertising in the form of push notifications and badges. E&M reserves the right to modify its Privacy Policy at any time and without prior notice. <br> <br>
+  
+  17. How We Use Information about You and Your Device<br> <br>
+  
+  We collect and use the information about you and your device collected through the App and Service, as well as other information obtained from our website or network and your device, your account, to maintain and provide you with the App and Service, to respond to your questions and instructions, to maintain the integrity of our network and address security issues, to investigate or take action regarding violations or suspected violations of law or our Terms, and to improve our App and Service.<br> <br>
+  
+  At times, we may use your information to market, advertise and promote events and other promotions. Your information may also be used for frequency capping, estimating the number of unique users, debugging, or security and fraud detection.<br> <br>
+  
+  For more detailed information regarding the collection and use of your information please see our Privacy Policy.
+</p>
+</div>
+
+
+<!-- Copy from here to the div after the footer to grab all information about footer-->
+
+<div>
+  <footer style="background-color: #292929; text-align: left; padding: 25px; color:#ffffff; width: 100%; clear: both; bottom:0; height: 182px; margin-top: auto; position: absolute;">
+
+    <!-- Keep this section - if more people, add to LP, will show up in footer -->
+ <div class="footcolumn">
+    <!-- <h1>Contact:</h1> <br> -->
+<!-- 
+
+    <div class="footcolumn" style="width:fit-content">
+     <p><a href="mailto:helpdesk@emconsultinginc.com"><h4>Kody Jordan</h4><p>IT Support Specialist <br><br> 800.572.0011 x169 <br> helpdesk@emconsultinginc.com</a></p>
+   </div>
+
+
+ This is One Contact Person
+   <div class="footcolumn" style="width:fit-content">
+   <p><a href="mailto:sabrina@emconsultinginc.com"><h4>Sabrina Thong</h4><p>Administrative Assistant <br><br> 800.572.0011 x144 <br> sabrina@emconsultinginc.com</a></p>
+ </div> -->
+
+     </div>
+
+ <div>
 
 
 <p> 
- <hr> 
+<hr> 
 </p>
-
-  
-    <div class="footcolumn" style="width: 48%;">
-      E&M ALL RIGHTS RESERVED
-    </div>
-    
-    <div class="footcolumn" style="width: 30%;">
-      <img class="" src="/Helpdesk/HelpDeskImages/whiteeandmlogo.png" class="responsive" alt="E&M Logo" style="vertical-align: middle; width: 40px; height: 40px;">
-      </div>
+ 
+   <div class="footcolumn" style="width: 48%;">
+     E&M ALL RIGHTS RESERVED
+   </div>
+   
+   <div class="footcolumn" style="width: 30%;">
+     <img class="" src="/Helpdesk/HelpDeskImages/whiteeandmlogo.png" class="responsive" alt="E&M Logo" style="vertical-align: middle; width: 40px; height: 40px;">
+     </div>
 
      <div class="footcolumn" style="width: 10%;">
        <a href="\privacy policy.html">Privacy Policy</a>
@@ -152,16 +301,13 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
      <a href="\termsofuse.html">Terms of Use</a>
    </div>
 
-  </div>
-    
-
-
+ </div>
+   
 </footer>
 
-
+</div>
+<!--This is the end of the footer section-->
 
 </body>
 
-
 </html>
-
