@@ -64,6 +64,11 @@ width: 45%;
 padding: 10px;
 }
 
+.rules {
+  width: 50%;
+  align-content: center;
+}
+
 .mainpage {
 width: 100%;
 float: center;
