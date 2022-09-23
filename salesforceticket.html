@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://use.typekit.net/igq1smf.css">
 <link rel="stylesheet" href="style.css">
 
-    
 <title>IT Help Desk</title>
 </head>
 <!--
@@ -56,9 +55,7 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
               <li class="dropdown-content"></li>
 <!--               <li><a href="hrlogin.html">Human Resources</a></li> -->
               <li><a href="https://www.lastpass.com/features/password-generator"target="_blank">Password Generator</a></li> <!-- To change or update links replace the href path-->
-              <li><a href="https://github.com/E-M-Consulting-Inc/CDN"target="_blank">Software Download</a></li>
-              <li><a href="https://yopass.se/"target="_blank">Message Encryption Service</a></li>
-              <li><a href="https://stats.uptimerobot.com/ORAgqhNzPR"target="_blank">Uptime Status Page</a></li>
+              <li><a href="https://github.com/E-M-Consulting-Inc/CDN"target="_blank">WatchGuardVPN Download</a></li>
 <!--                 <li><a href="#">"Link" target="_blank"</a></li> -->
           </ul>
             
@@ -127,39 +124,101 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 
 
 <div class="row">
+<div class="column">
 
-  <img style="max-width: 210%; height: auto;" class="banner" src="Helpdesk\HelpDeskImages\NEW IT Banner 9-1.png">
+<img src="/Helpdesk/HelpDeskImages/techgusty.png" class="responsive" alt="Tech goose image">
 
-  </div>
+</div>
 
-<div class="mainpage">
+<div class="column">
 
-<button class="arrow"><a href="itticket.html" > 
-    <img style="width: 250px; height: auto;" src="Helpdesk\HelpDeskImages\mainit1.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
-    <img style="width: 250px; height: auto;" src="Helpdesk\HelpDeskImages\mainit2.png" alt="up arrow" class="imghover"> 
-  </a>
-</button>
+<!-- START OF FORM CODE (CAN BE REMOVED FROM HERE-->      
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: Please add the following <META> element to your page <HEAD>. -->
+<!-- If necessary, please modify the charset parameter to specify the -->
+<!-- character set of your HTML page. -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+ <script>
+function timestamp() { var response = document.getElementById("g-recaptcha-response"); 
+                      if (response == null || response.value.trim() == "") 
+                      {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+</script>
+    <script type="text/javascript">
+      function callback() {
+        const submitButton = document.getElementById("submit-button");
+        submitButton.removeAttribute("disabled");
+      }
+    </script>
+ 
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: Please add the following <FORM> element to your page. -->
+<!-- ---------------------------------------------------------------------- -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" autocomplete="off">
+
+<input type=hidden name='captcha_settings' value='{"keyname":"Google","fallback":"true","orgId":"00D5w000003Ul2j","ts":""}'>
+<input type=hidden name="orgid" value="00D5w000003Ul2j">
+<input type=hidden name="retURL" value="https://helpdesk.emconsultinginc.com/confirmation.html">
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: These fields are optional debugging elements. Please uncomment -->
+<!-- these lines if you wish to test in debug mode. -->
+<!-- <input type="hidden" name="debug" value=1> -->
+<!-- <input type="hidden" name="debugEmail" value="kody@eandmsales.com"> -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+<label for="email">Email:</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br><br>
+
+<label for="subject">Subject:</label><input id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Support Ticket"/><br><br>
+
+Department:<select id="00N5w00000S1maj" name="00N5w00000S1maj" title="Department"><option value="">--None--</option><option value="Association Team">Association Team</option>
+<option value="Graphics">Graphics</option>
+<option value="Sales">Sales</option>
+<option value="Management">Management</option>
+<option value="Accounting">Accounting</option> 
+ </select><br><br>
+
+
+
+Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with"><option value="">--None--</option><option value="Computer">Computer</option>
+<option value="Peripherals (Mouse, Keyboard, Monitor, etc.)">Peripherals (Mouse, Keyboard, Monitor, etc.)</option>
+<option value="Software">Software</option>
+<option value="Network (Internet Access, Server Access, etc.)">Network (Internet Access, Server Access, etc.)</option>
+<option value="Phone">Phone</option>
+<option value="Other">Other</option>
+</select><br>
+
+
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+
+<input id="submit-button" type="submit" name="submit">
+<div class="g-recaptcha" data-sitekey="6LeU1XIgAAAAAHHe_6uxR6_kP_oIt0UNjMFVztv_" data-callback="callback"></div>
+
       
-<button class="arrow"><a href="https://form.jotform.com/221985265567065"> 
-  <img style="width: 250px; height: auto;" src="Helpdesk\HelpDeskImages\LPticket1.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
-  <img style="width: 250px; height: auto;" src="Helpdesk\HelpDeskImages\LPticket2.png" alt="up arrow" class="imghover"> 
-</a>
-</button>
 
-<button class="arrow"><a href="salesforceticket.html" > 
-  <img style="width: 250px; height: auto;" src="Helpdesk\HelpDeskImages\SFticket1.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
-  <img style="width: 250px; height: auto;" src="Helpdesk\HelpDeskImages\SFticket2.png" alt="up arrow" class="imghover"> 
-</a>
-</button>
+</form>
+
+ <!-- END OF FORM CODE (CAN BE REMOVED UP FROM HERE) -->  
 
 </div>
 
 
-      
 <!-- Copy from here to the div after the footer to grab all information about footer-->
 
 <div>
-<footer style="background-color: #292929; text-align: left; padding: 25px; color:#ffffff; width: 100%; display: table; clear: both; bottom:0; margin-top: auto; position: sticky;">
+  <footer style="background-color: #292929; text-align: left; padding: 25px; color:#ffffff; width: 100%; clear: both; bottom:0; height: 182px; margin-top: auto;">
 
     <!-- Keep this section - if more people, add to LP, will show up in footer -->
  <div class="footcolumn">
@@ -178,7 +237,6 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 
      </div>
 
-  
  <div>
 
 
@@ -205,7 +263,6 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
  </div>
    
 </footer>
-
 
 </div>
 <!--This is the end of the footer section-->
