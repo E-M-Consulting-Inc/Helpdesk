@@ -26,6 +26,12 @@ h1 {
   margin-top: 10px;
 }
 
+
+h2 {
+  text-align: center;
+  color: #000;
+}
+
 /* Start of Arrow Design and animation on Hover   */
 .arrow {
 position: relative;
